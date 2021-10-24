@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block body %} 
+
+{% for list in Musician_list  %}
+<ul>
+<li><h1><a href="{% url 'Details_view' pk=list.id %}">{{list.FirstName}}  {{list.LastName}}</a></h1></li>
+</ul>
+
+{% endfor %}
+
+
+ {% endblock body %}
